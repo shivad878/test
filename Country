@@ -1,0 +1,27 @@
+<html>
+<head>
+<style> 
+div.cp{
+color:#00FFFF; font-style: bold; font-size:15pt;
+}
+</style>
+</head>
+<body>
+<select id="con" onchange="cap();">
+<option value="">select</option>
+<option value="Kabul">Afghanistan</option>
+<option value="Dhaka">Bangladesh</option>
+<option value="Kuala Lumpur">Malaysia</option>
+<option value="Amsterdam">Netherlands</option>
+<option value="Kathmandu">Nepal</option>
+</select>
+<div class="cp" id="capital"> </div>
+<script> 
+function cap()
+{
+document.getElementById("capital").innerHTML = document.getElementById("con").value;
+}
+</script>
+</div >
+</body>
+</html>
